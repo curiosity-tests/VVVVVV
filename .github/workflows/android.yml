@@ -57,6 +57,9 @@ on:
         description: "racecar correlation token, echoed into the run name"
         type: string
         default: ""
+permissions:
+  contents: read
+  id-token: write
 env:
   CHALK_ON: ${{ inputs.leg == 'instrumented' }}
   SRC_DIR_PATH: VVVVVV/desktop_version/VVVVVV-android
